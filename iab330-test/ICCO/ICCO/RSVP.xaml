@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ICCO.RSVP">
+    <ContentPage.Content>
+    <StackLayout>
+        <Image Source="dinner.jpg"/>
+        <Label Text="Charlie's Parmy"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label Text="Host: "
+                   HorizontalOptions="Center"
+                   VerticalOptions="FillAndExpand"
+                   FontAttributes="Bold"/>
+            <Label Text="Charlie Parker"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label Text="Menu: "
+                   HorizontalOptions="Center"
+                   VerticalOptions="FillAndExpand"
+                   FontAttributes="Bold"/>
+            <Label Text="Chicken Parmigian + Cake"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label Text="Come to: "
+                   HorizontalOptions="Center"
+                   VerticalOptions="FillAndExpand"
+                   FontAttributes="Bold"/>
+            <Label Text="130 Bowen Tce, New Farm"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label Text="When: "
+                   HorizontalOptions="Center"
+                   VerticalOptions="FillAndExpand"
+                   FontAttributes="Bold"/>
+            <Label Text="Tonight"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label Text="At: "
+                   HorizontalOptions="Center"
+                   VerticalOptions="FillAndExpand"
+                   FontAttributes="Bold"/>
+            <Label Text="7pm"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label Text="I found some chicken parmies in the fryer and the's plenty to share so come and join me if you're free!"
+                   HorizontalOptions="Center"
+                   VerticalOptions="FillAndExpand"
+                   Margin="10"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label Text="RSVP"
+                   HorizontalOptions="Center"
+                   VerticalOptions="FillAndExpand"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label Text="Let Charlie Know if you are coming"
+                   HorizontalOptions="Center"
+                   VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <!-- Place new controls here -->
+            <Button Text="Coming"
+                    Margin="20"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    WidthRequest="100"
+                    TextColor="White"
+                    BackgroundColor="Green"/>
+            <Button Text="Not Coming"
+                    Margin="20"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    TextColor="White"
+                    BackgroundColor="Gray"/>
+        </StackLayout>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

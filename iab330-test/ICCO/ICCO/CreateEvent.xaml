@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ICCO.CreateEvent">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="2" Grid.Column="0" Text="Name of event: " VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
+            <Entry Grid.Row="2" Grid.Column="1" Placeholder="Please enter a short title" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand" />
+            <Label Grid.Row="3" Grid.Column="0" Text="What are you cooking?" HorizontalOptions="FillAndExpand" VerticalOptions="CentreAndExpand"/>
+            <Entry Grid.Row="3" Grid.Column="1" Placeholder="Add the main dish" HeightRequest="1"/>
+            <Label Grid.Row="4" Grid.Column="0" VerticalTextAlignment="Center" Text = "Location" />
+            <Entry Grid.Row="4" Grid.Column="1" Placeholder="Add address of event" HeightRequest="1"/>
+            <Label Grid.Row="5" Grid.Column="0" Text = "Date" VerticalOptions="Center" />
+            <Button Grid.Row="5" Grid.Column="1" Text="Today" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Blue" TextColor="White" WidthRequest="80"/>
+            <Button Grid.Row="5" Grid.Column="1" Text="Tomorrow" HorizontalOptions="Center" VerticalOptions="Center"  BackgroundColor="Blue" TextColor="White" WidthRequest="80"/>
+            <Label Grid.Row="6" Grid.Column="0" Text = "Time" VerticalOptions="Center"/>
+            <TimePicker Grid.Row="6" Grid.Column="1" Scale=".7" HorizontalOptions="StartAndExpand"/>
+            <Label Grid.Row="6" Grid.Column="1" TextColor="Gray" Text="UTC +10" HorizontalOptions="Center" VerticalOptions="Center" Scale=".5"/>
+            <Label Grid.Row="7" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" Text = "All the details" />
+            <Entry Grid.Row="7" Grid.Column="1" Placeholder="Please enter a short decription"/>
+            <Label Grid.Row="8" Grid.Column="0" Grid.RowSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="CentreAndExpand" Text="Upload Event Photo"/>
+            <Label Grid.Row="8" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="PhotoPickerPlaceholder" />
+            <Button Grid.Row="9" Grid.Column="1" Text="Invite Guests" BackgroundColor="Gray" TextColor="White" Scale=".8" WidthRequest="80"/>
+            <Button Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Text="Create Event" TextColor="White" BackgroundColor="Green" BorderRadius="12" WidthRequest="100"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
